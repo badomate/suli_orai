@@ -69,19 +69,19 @@ void masodikora()
     Sorhatar();
     
     cout << "Ötödik feladat" << endl;
-    
+
     int a, b;
-    cout << "kérem az A változó értéket";
+    cout << "kérem az A változó értéket: " << endl;
     cin >> a;
-    cout << "kérem a B váltrozó értéket";
+    cout << "kérem a B váltrozó értéket: " << endl;
     cin >> b;
     cout << endl;
-    
+
     cout << "Kérek két értéket" ;
     cin >> a >> b;
-    
+
     cout << endl;
-    cout << "A értéke 1-gyel növelve: " << a++ << endl;
+    cout << "A értéke 1-gyel növelve: " << a+1 << endl;
     cout << "A és B összege" << a+b << endl;
     cout << "Szorzatuk" << a*b << endl;
     cout << "Hányadosuk: " << a/b << endl;
