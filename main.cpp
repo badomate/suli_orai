@@ -2,8 +2,8 @@
 #include <iostream>
 
 using namespace std;
-{
-  int main()
+
+ int main()
   {
       //elosora();
       int a;
@@ -20,4 +20,4 @@ using namespace std;
 
 
   }
-}
+
