@@ -50,5 +50,7 @@ void masodikora()
     cout << "Dátum: " << endl;
     cout << setfill('0');
     cout << ev << "." << setw(2) << ho << "." << setw(2) << nap << "." << endl;
+    
+    Sorhatar();
 
 }
