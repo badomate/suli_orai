@@ -4,8 +4,8 @@
 
 void masodikora()
 {
-    /*
-    cout << "Eso feladat" << endl;
+    
+    cout << "Elso feladat" << endl;
     int a;
     string nev;
 
@@ -19,7 +19,7 @@ void masodikora()
     cout << endl << nev << " " << a;
 
     Sorhatar();
-    */
+    
 
     //tiezedesd jelek, elég egyszer beirni
     cout << fixed << setprecision(2);
@@ -50,6 +50,21 @@ void masodikora()
     cout << "Dátum: " << endl;
     cout << setfill('0');
     cout << ev << "." << setw(2) << ho << "." << setw(2) << nap << "." << endl;
+    
+    Sorhatar();
+    cout << "Negyedik feladat" << endl;
+
+    int a = 39;
+    float b = 56.805;
+
+    cout << a << "-es szám: " << endl;
+    cout << "tizes számrendszerben: \t\t\t" << dec << a << endl;
+    cout << "nyolcas számrendszerben: \t\t" << oct << a << endl;
+    cout << "tizenhatos számrendszerben: \t\t" << hex << a << endl << endl;
+
+    cout << b << "-es szám: " << endl;
+    cout << "tizedes tört alakja: \t" << fixed << setprecision(6) << b <<  endl;
+    cout << "exponenciális alakja: \t" << scientific << b << endl;
     
     Sorhatar();
 
