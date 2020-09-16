@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h>
 #include <iomanip>
+#include <math.h>
 
 void masodikora()
 {
@@ -20,8 +21,6 @@ void masodikora()
 
     Sorhatar();
     
-
-    //tiezedesd jelek, elég egyszer beirni
     cout << fixed << setprecision(2);
     cout << setw(8) << 1.0 << " " << setw(8) << 1.0*0.25 << endl;
     cout << setw(8) << 12 << " " << setw(8) << 12*0.5 << endl;
@@ -86,5 +85,21 @@ void masodikora()
     cout << "Szorzatuk" << a*b << endl;
     cout << "Hányadosuk: " << a/b << endl;
     cout << "Maradék: " << a%b << endl;
+    cout << "Valós osztás eredményük: " << (a + 0.0)/b;
+    
+    Sorhatar();
+    
+    cout << "Hatodik feladat" << endl;
+
+    float fok, radian;
+    cout << "Adja meg a szögmértéket fokban: " << endl;
+    cin >> fok;
+
+    radian = (fok/180)*M_PI;
+
+    cout << "Szögmérték radiánban: " << fixed << setprecision(2) << radian << endl;
+
+
+
 
 }
