@@ -5,19 +5,12 @@ using namespace std;
 
  int main()
   {
-      //elosora();
-      int a;
-      string nev;
-
-      cout << "Hány éves vagy: " << endl;
-      cin >> a;
-
-      cout << "Mi a neved" << endl;
-      cin.sync();
-      getline(cin, nev);
-
-      cout << endl << nev << " " << a;
-
+      elosora();
+      masodikora();
+      
+      cin.Get(); //nemtom van e ilyen, lusta vagyok megnézni codeblocksban, és itt nem lehet futtatni, ha nem működik töröld ki
+  
+      return 0;
 
   }
 
