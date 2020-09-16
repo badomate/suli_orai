@@ -98,6 +98,23 @@ void masodikora()
     radian = (fok/180)*M_PI;
 
     cout << "Szögmérték radiánban: " << fixed << setprecision(2) << radian << endl;
+    
+    Sorhatar();
+
+    cout << "Hetedik feladat" << endl;
+
+    float a, b, c, alfa;
+
+    cout << "a = " << endl;
+    cin >> a;
+    cout << "b = " << endl;
+    cin >> b;
+    cout << "c = " << endl;
+    cin >> c;
+    cout << "alfa = " << endl;
+    cin >> alfa;
+
+    cout << "A megoldas: " << keplet(a, b, c, alfa) << endl;
 
 
 
