@@ -67,5 +67,24 @@ void masodikora()
     cout << "exponenciális alakja: \t" << scientific << b << endl;
     
     Sorhatar();
+    
+    cout << "Ötödik feladat" << endl;
+    
+    int a, b;
+    cout << "kérem az A változó értéket";
+    cin >> a;
+    cout << "kérem a B váltrozó értéket";
+    cin >> b;
+    cout << endl;
+    
+    cout << "Kérek két értéket" ;
+    cin >> a >> b;
+    
+    cout << endl;
+    cout << "A értéke 1-gyel növelve: " << a++ << endl;
+    cout << "A és B összege" << a+b << endl;
+    cout << "Szorzatuk" << a*b << endl;
+    cout << "Hányadosuk: " << a/b << endl;
+    cout << "Maradék: " << a%b << endl;
 
 }
