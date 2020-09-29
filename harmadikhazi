@@ -1,0 +1,335 @@
+#include <iostream>
+#include <math.h>
+#include <cmath>
+#include <time.h>
+
+using namespace std;
+
+int main()
+{
+
+    cout << "elozor is le szeretnem szogezni, hogy nem biztos hogy mindehyik jom elirasok lehetnek, kb fel ora altt csinaltam az egeszet, ossztesez 1szer futtattam, igy szemantikai hibak lehetnek benne" << endl;
+    cout << "Elso feladat" << endl << endl;
+
+    int a;
+
+    cout << "irj egy szamot: " << endl;
+    cin >> a;
+
+    int b;
+
+    cout << "Kifizetendő pénzösszeg: " << a << endl << endl;
+
+    cout << a / 10 << " darab 10 koronés érme," << endl;
+    b = a % 10;
+
+    cout << b / 5 << " darab 5 koronés érme," << endl;
+    b = b % 5;
+
+    cout << b / 2 << " darab 2 koronés érme," << endl;
+    b = b % 2;
+    cout << b << " darab 2 koronés érme," << endl;
+
+    cout << "Masodik feladat" << endl << endl;
+
+    cout << "Irj 2 szamot: " << endl;
+    int c,d;
+    cin >> c >> d;
+
+    cout << (c > d ? c : d) << "A nagyobb " << endl;
+
+    cout << "harmadik feladat" << endl << endl;
+
+    int e;
+
+    cout << "Irj egy szamot" << endl;
+    cin >> e;
+
+    cout << ((e % 2) == 0 ? "Paros" : "Paratlasn") << endl;
+
+
+    cout << "Negyedik feladat" << endl << endl;
+
+    //meguntam mindig hogy kiirjam hogy beker egy szamot, nem gepironak tanulunk hogy ennyit irjak
+
+    float f;
+    cin >> f;
+    cout << abs(f) << endl;
+
+    cout << "Otodik feladat" << endl << endl;
+
+    float g;
+
+    cin >> g;
+
+    cout << (g >= 0 ? "+" : "-") << endl;
+
+    cout << "Hatodik feladat" << endl << endl;
+
+    cout << "3 szamot" << endl;
+
+    int h, i, j, seged1;
+
+    seged1 = h > i ? h : i;
+    cout << (seged1 > j ? seged1 : j);
+    if(seged1 < j)
+    {
+        cout << j << seged1 << (h < i ? h : i) << endl;
+    }
+    else
+    {
+        if(j > (h < i ? h : i))
+        {
+            cout << seged1 << j << (h < i ? h : i) << endl;
+        }
+        else
+        {
+            cout << seged1 << (h < i ? h : i) << j << endl;
+        }
+    }
+
+    cout << "Hetedik feladat" << endl << endl;
+
+    cout << "4 szam" << endl;
+    int k,l,m,n;
+
+    cin >>k >> l>>m>>n;
+
+    if(k > l)
+    {
+        if(m >n)
+        {
+            cout << (k/l == m/n ? "igen" : "nem") << endl;
+        }
+        else
+        {
+            cout << (k/l == n/m ? "igen" : "nem") << endl;
+        }
+    }
+    else
+    {
+        if(m >n)
+        {
+            cout << (l/m == m/n ? "igen" : "nem") << endl;
+        }
+        else
+        {
+            cout << (l/m == n/m ? "igen" : "nem") << endl;
+        }
+    }
+
+    cout << "Nyolcadik feladat" << endl << endl;
+
+    int o;
+    if(o < 0)
+    {
+        cout << "negativ" << endl;
+    }
+    else
+    {
+        cout << sqrt(0) << endl;
+    }
+
+    cout << "Kielencedik feladat" << endl << endl;
+
+    int p;
+    float egyes;
+    egyes = p % 10;
+    p = p / 10;
+
+    cout << p + egyes << endl;
+
+    cout << "Tizedik feladat" << endl << endl;
+
+    cout << "Ezt sztem nem vettuk" << endl;
+
+    cout << "11 feladat" << endl << endl;
+
+    float hom;
+
+    cin >> hom;
+
+    if(hom <= 37.0)
+    {
+        cout << "Laztalan" << endl;
+    }
+    else if(37.0 < hom < 37.5)
+    {
+        cout << "Hoemelkedes" << endl;
+    }
+    else
+    {
+        cout << "Lazas" << endl;
+    }
+
+    cout << "12 feladat" << endl << endl;
+
+    float q;
+    cin >> q;
+
+    if(((q / 2) == 0) || (((q+1) / 2) == 0))
+    {
+        cout << "egesz" << endl;
+    }
+    else
+    {
+        cout << "nem egesz" << endl;
+    }
+
+    cout << "13 feladat" << endl << endl;
+
+    int r;
+
+    cin >> r;
+
+    if(r >= 23)
+    {
+        cout << "1" << endl;
+    }
+    else if( 23 < r <= 32)
+    {
+        cout << "2" << endl;
+    }
+    else if(32 < r <= 41)
+    {
+        cout << "3" << endl;
+    }
+    else if(41 < r <= 50)
+    {
+        cout << "4" << endl;
+    }
+    else if(50 < r <= 60)
+    {
+        cout << "5" << endl;
+    }
+
+    cout << "14 feladat" << endl << endl;
+
+    //most neztem meg neten az abc-t mert eddig tudtam
+
+    float s, t, u;
+    cin >> s >> t >> u;
+
+    float diszk = pow(t,2) - 4*s*u;
+    if(diszk > 0)
+    {
+        cout << ((-t+sqrt(diszk))/(2*s)) << endl;
+        cout << ((-t-sqrt(diszk))/(2*s)) << endl;
+    }
+    else if (diszk == 0)
+    {
+         cout << ((-t)/(2*s)) << endl;
+    }
+    else
+    {
+         cout << "nincs m.o" << endl;
+    }
+
+    cout << "15 feladat" << endl << endl;
+
+    cout << "mint mondottam volt, ennyit nem fogok irni, mert akk holnapra se tudom befejezni, lista nelkul(tanulni fogjuk remeelm) szopas, jkurvga sokat kell irni, es nem akarok, ott egy komkret parancs vam erre" << endl;
+
+    cout << "16. feladat" << endl << endl;
+
+    int darab;
+    int fizetes;
+    int maradek;
+    cin >> darab;
+    if(darab >= 1)
+    {
+        fizetes = 500;
+    }
+    else if(darab >= 2)
+    {
+        fizetes += 450;
+    }
+    else if(darab >= 3)
+    {
+        maradek = darab -2;
+        fizetes += 400*maradek;
+    }
+
+    cout << fizetes << endl;
+
+    cout << "17 edik feladat" << endl;
+
+    int y;
+
+    cout << ((y % 3) == 0 ? "igen" : "nem") << endl;
+
+    cout << "18 edik feladat" << endl;
+
+    int hajoszam;
+
+    cin >> hajoszam;
+
+    if(hajoszam > 3)
+    {
+        cout << "Nehez torony" << endl;
+    }
+
+    cout << "19 edik feladat" << endl;
+
+    int szaml, nev;
+
+    cin >> szaml, nev;
+
+    if((szaml % nev) == 0)
+    {
+        cout << (szaml / nev) << endl;
+    }
+    else
+        {
+
+            cout << "Nem egesz" << endl;
+        }
+
+    cout << "20 edik feladat" << endl;
+
+    int z, szazas, tizes;
+
+    cin >> z;
+
+    szazas = z / 100;
+    tizes = (z -szazas) / 10;
+    egyes = z - ((z -szazas) / 10) - z / 100;
+
+    int armst;
+    armst = pow(szazas, 3) + pow(tizes, 3) + pow(egyes, 3);
+
+    cout << (armst == z ? "igen" : "nem") << endl;
+
+    cout << "21 edik feladat" << endl;
+
+    // ujra a-t és b-t fogom hasznalni csak mar deklaralva vannak
+
+    cout << "2 szam" << endl;
+
+    cin >> a >> b;
+
+    if(b == 0)
+    {
+        cout << "0-aval nem lehet osztani" << endl;
+    }
+    else
+    {
+        cout << a/b << endl;
+    }
+
+    cout << "22 edik feladat" << endl;
+
+    float egyik, masik;
+
+    cin >> egyik >> masik;
+
+    if(egyik != masik)
+    {
+        cout << (egyik > masik ? egyik : masik) << ">" << (egyik > masik ? egyik : masik) << endl;
+    }
+    else
+    {
+        cout << egyik << "=" << masik << endl;
+    }
+
+    return 0;
+}
