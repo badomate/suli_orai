@@ -90,5 +90,19 @@ void negyedik()
                 break;
             }
     }
+    
+    int szam;
+    cout << "A szam: ";
+    cin >> szam;
+
+    if(szam >= 30 && szam <= 100)
+    {
+        cout << "Benne van";
+    }
+    else
+    {
+        cout << "Nincs benne";
+    }
+
 
 }
