@@ -103,6 +103,22 @@ void negyedik()
     {
         cout << "Nincs benne";
     }
+    
+    float ut, ido;
+    cout << "Megtett ut";
+    cin >> ut;
+
+    cout <<"Megtett ido";
+    cin >> ido;
+
+    if(ut < 0 || ido <= 0)
+    {
+        cout << "Értelmetlen adatok";
+    }
+    else
+    {
+        cout << "Sebesseg: " << fixed << setprecision(2) << ut/ido << endl;
+    }
 
 
 }
