@@ -119,6 +119,21 @@ void negyedik()
     {
         cout << "Sebesseg: " << fixed << setprecision(2) << ut/ido << endl;
     }
+    
+    int szam;
+    cout << "Ird be a szamot: ";
+    cin >> szam;
+
+    if(szam % 15 != 0 && (szam % 3 == 0 || szam % 5 == 0))
+    {
+        cout << "Oszthato" << endl;
+    }
+    else
+    {
+        cout << "nem oszthato" << endl;
+    }
+    
+
 
 
 }
